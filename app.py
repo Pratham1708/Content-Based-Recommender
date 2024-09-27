@@ -117,13 +117,13 @@ else:
             col1, col2 = st.columns (2)  # Create two columns
 
             with col1:
-                st.markdown(f"<span style='font-size: 18px'>Top 5 Actor-based Recommendations for {selected_movie} are:</span>", unsafe_allow_html=True)
-                for idx, movie in enumerate(actor_based_recommendations):
+                st.subheader(f"Top 5 Actor-based Recommendations for {selected_movie} are:")
+                for idx, movie in enumerate(actor_recommendations):
                     st.write(f"{idx+1}. {movie}")
 
             with col2:
-                st.markdown(f"<span style='font-size: 18px'>Top 5 Content-based Recommendations for {selected_movie} are:</span>", unsafe_allow_html=True)
-                for idx, movie in enumerate(content_based_recommendations):
+                st.subheader(f"Top 5 Content-based Recommendations for {selected_movie} are:")
+                for idx, movie in enumerate(content_recommendations):
                     st.write(f"{idx+1}. {movie}")
 
     if __name__ == "__main__":
