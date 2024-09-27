@@ -1,5 +1,19 @@
 # Movie Recommendation System
 
+## Table of Contents
+
+*   [Overview](#overview)
+*   [Features](#features)
+*   [Requirements](#requirements)
+*   [Installation](#installation)
+*   [Usage](#usage)
+*   [Access the Application](#access-the-application)
+*   [Dataset](#dataset)
+*   [License](#license)
+*   [Contributing](#contributing)
+*   [Acknowledgments](#acknowledgments)
+*   [Contact](#contact)
+
 ## Overview
 
 This project is a movie recommendation system that uses content-based filtering and actor similarity to suggest movies to users. The system is built using Python and Streamlit, and it uses the IMDB movie dataset to train the recommendation models.
@@ -52,3 +66,10 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 *   The IMDB movie dataset is used to train the recommendation models.
 *   The Streamlit library is used to build the user-friendly interface.
 *   The Scikit-learn library is used to implement the content-based filtering and actor similarity algorithms.
+
+## Contact
+
+If you have any questions or need further assistance, please don't hesitate to contact me:
+
+*   Email: [mailto:jindalpratham68@gmail.com](mailto:jindalpratham68@gmail.com)
+*   Project Link: <https://content-based-recommender.streamlit.app/>
