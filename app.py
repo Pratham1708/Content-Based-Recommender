@@ -118,12 +118,12 @@ else:
 
             with col1:
                 st.subheader(f"Top 5 Actor-based Recommendations for {selected_movie} are:")
-                for idx, movie in enumerate(actor_recommendations):
+                for idx, movie in enumerate(actor_based_recommendations):
                     st.write(f"{idx+1}. {movie}")
 
             with col2:
                 st.subheader(f"Top 5 Content-based Recommendations for {selected_movie} are:")
-                for idx, movie in enumerate(content_recommendations):
+                for idx, movie in enumerate(content_based_recommendations):
                     st.write(f"{idx+1}. {movie}")
 
     if __name__ == "__main__":
