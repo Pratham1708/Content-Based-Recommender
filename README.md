@@ -71,5 +71,5 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 
 If you have any questions or need further assistance, please don't hesitate to contact me:
 
-*   Email: [mailto:jindalpratham68@gmail.com](mailto:jindalpratham68@gmail.com)
+*   Email: [Gmail](mailto:jindalpratham68@gmail.com)
 *   Project Link: <https://content-based-recommender.streamlit.app/>
