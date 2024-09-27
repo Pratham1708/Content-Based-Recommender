@@ -31,6 +31,10 @@ This project is a movie recommendation system that uses content-based filtering 
 2.  Click the "Get Recommendations" button to get a list of recommended movies.
 3.  The recommended movies will be displayed in two columns: actor-based recommendations and content-based recommendations.
 
+## Access the Application
+
+You can access the application directly by visiting [https://content-based-recommender.streamlit.app/](https://content-based-recommender.streamlit.app/).
+
 ## Dataset
 
 The IMDB movie dataset is used to train the recommendation models. The dataset contains information about movies, including their genres, directors, casts, and ratings.
