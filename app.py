@@ -115,14 +115,16 @@ else:
                 actor_based_recommendations = get_actor_based_recommendations(selected_movie)
 
             col1, col2 = st.columns (2)  # Create two columns
-            with col1:
-                st.write("Content-based Recommendations:")
-                for movie in content_based_recommendations:
-                    st.write(movie)
-            with col2:
-                st.write("Actor-based Recommendations:")
-                for movie in actor_based_recommendations:
-                    st.write(movie)
 
-    if __name__ == '__main__':
+            with col1:
+                st.markdown(f"<span style='font-size: 18px'>Top 5 Actor-based Recommendations for {selected_movie} are:</span>", unsafe_allow_html=True)
+                for idx, movie in enumerate(actor_based_recommendations):
+                    st.write(f"{idx+1}. {movie}")
+
+            with col2:
+                st.markdown(f"<span style='font-size: 18px'>Top 5 Content-based Recommendations for {selected_movie} are:</span>", unsafe_allow_html=True)
+                for idx, movie in enumerate(content_based_recommendations):
+                    st.write(f"{idx+1}. {movie}")
+
+    if __name__ == "__main__":
         app_layout()
