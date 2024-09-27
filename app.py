@@ -109,16 +109,20 @@ else:
 
         # Show recommendations on button click
         if st.button("Get Recommendations"):
-            content_based_recommendations = get_content_based_recommendations(selected_movie)
-            actor_based_recommendations = get_actor_based_recommendations(selected_movie)
+            with st.spinner("Loading recommendations..."):  # Add a loading spinner
+                time.sleep(5)  # Simulate a 5-second delay
+                content_based_recommendations = get_content_based_recommendations(selected_movie)
+                actor_based_recommendations = get_actor_based_recommendations(selected_movie)
 
-            st.write("Content-based Recommendations:")
-            for movie in content_based_recommendations:
-                st.write(movie)
-
-            st.write("Actor-based Recommendations:")
-            for movie in actor_based_recommendations:
-                st.write(movie)
+            col1, col2 = st.columns (2)  # Create two columns
+            with col1:
+                st.write("Content-based Recommendations:")
+                for movie in content_based_recommendations:
+                    st.write(movie)
+            with col2:
+                st.write("Actor-based Recommendations:")
+                for movie in actor_based_recommendations:
+                    st.write(movie)
 
     if __name__ == '__main__':
         app_layout()
