@@ -1,4 +1,4 @@
-# Movie Recommendation System
+# BollyChoice
 
 ## Table of Contents
 
